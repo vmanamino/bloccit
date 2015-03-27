@@ -2,6 +2,8 @@
 
 ## Bloccit: a Reddit replica to teach the fundamentals of web development and Rails. Made with my mentor Elad Meidar at [Bloc](http://bloc.io).
 
+I've deployed this on Heroku as viral-bloccit, which you can view here [viral-bloccit](https://viral-bloccit.herokuapp.com/)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
