@@ -8,10 +8,22 @@ h1 {
 
 h1 { color: red; 
 } 
+
 p#index-title { 
   text-align: center; 
   font-size: 15px; 
   color: blue;
+}
+
+.social-btn {
+  padding:8px 16px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 3px;
+  background: slategrey;
+  color: white;
+  
+  
 }
 
 
