@@ -1,0 +1,22 @@
+<h1>All Advertisements</h1>
+<% @advertisements.each do |advertisement| %>
+<div class="media">
+  <div class="media-body">
+    <h4 class="media-heading">
+      <%= link_to advertisement.title, advertisement %>
+      </h4>
+  </div>
+</div>
+<div class='media-body'>
+  <h5>
+    <%= advertisement.copy %>
+  </h5>
+  <h6>
+    Price is: 
+    <%= advertisement.price %>
+  </h6>
+</div>
+  
+
+
+<% end %>
