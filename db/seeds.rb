@@ -33,7 +33,7 @@ end
 user = User.first
 user.skip_reconfirmation!
 user.update_attributes!(
-  email: 'vrlamin@hotmail.com',
+  email: 'example@hotmail.com',
   password: 'PASSWORD'
   )
 
