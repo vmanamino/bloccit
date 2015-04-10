@@ -13,6 +13,7 @@ users = User.all
 
 # Create Posts
 50.times do
+  sleep(5)
   Post.create!(
     user: users.sample,
     title: Faker::Lorem.sentence,
