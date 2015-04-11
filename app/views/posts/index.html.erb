@@ -2,6 +2,7 @@
 <% if policy(Post.new).create? %>
   <%= link_to "New Post", new_post_path, class: 'btn btn-success' %>
 <% end %>
+<% if current_user.present? %>
 <% @posts.each do |post| %>
 <div class="media">
   <div class="media-body">
@@ -14,4 +15,5 @@
     </small>
   </div>
 </div>
+<% end %>
 <% end %>
