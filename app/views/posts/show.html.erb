@@ -6,3 +6,10 @@
   <%= link_to "Edit", edit_topic_post_path(@topic, @post), class: 'btn btn-success' %>
 <% end %>
 <p><%= @post.body %></p>
+<% if @summary %>
+<p><%= link_to @summary.summary, [@topic, @post, @summary] %></p>
+<% else %>
+  <% if policy(Summary.new).create? %>
+    <%= link_to "Create Summary", new_topic_post_summary_path(@topic, @post, @summary), class: 'btn btn-success' %>
+  <% end %>
+<% end %> 
