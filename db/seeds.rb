@@ -32,12 +32,12 @@ end
 posts = Post.all
 
 # Create Summaries
-50.times do
-  Summary.create!(
-    post: posts.sample,
-    summary: 'This is stub summary for this post'    
-    )
-end
+#50.times do
+#  Summary.create!(
+#    post: posts.sample,
+#    summary: 'This is stub summary for this post'    
+#    )
+#end
 #create Comments
 100.times do
   Comment.create!(
