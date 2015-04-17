@@ -6964,3 +6964,133 @@ Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127
 
 Started GET "/assets/application-9cdf6e2fce722206f166c57ef7b531c2.js?body=1" for 108.18.246.157 at 2015-04-12 06:46:10 +0000
 Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 108.18.246.157 at 2015-04-17 00:59:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 438ms (Views: 385.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 108.18.246.157 at 2015-04-17 00:59:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 108.18.246.157 at 2015-04-17 00:59:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 108.18.246.157 at 2015-04-17 00:59:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome-9f85176617a515152f96daf59d3cf2d0.css?body=1" for 108.18.246.157 at 2015-04-17 00:59:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-b41b215eb0a0d7b845f4cc4a8ac52627.css?body=1" for 108.18.246.157 at 2015-04-17 00:59:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 108.18.246.157 at 2015-04-17 00:59:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 108.18.246.157 at 2015-04-17 00:59:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-6a37dea4509abab7d69e1de01fa44f76.js?body=1" for 108.18.246.157 at 2015-04-17 00:59:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-04-17 00:59:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-04-17 00:59:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-04-17 00:59:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-9cdf6e2fce722206f166c57ef7b531c2.js?body=1" for 108.18.246.157 at 2015-04-17 00:59:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_up" for 108.18.246.157 at 2015-04-17 00:59:39 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (521.0ms)
+Completed 200 OK in 791ms (Views: 768.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 108.18.246.157 at 2015-04-17 01:00:00 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+FQnkrV0YqiBFlJFOd952jcL35q+RBGlfr8NSwLNQAsyu1ZWvKfCse06Yr729JN4wg1bPSMux2lBUSY6XKR8Nw==", "user"=>{"name"=>"ricky", "email"=>"vrlamin@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'vrlamin@hotmail.com' LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["confirmation_token", "f8d3c653dcf23d72b4d2d225f3e31b9acc285a319227df6123c69cc1c5a5eb8e"]]
+  [1m[36mSQL (40.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["email", "vrlamin@hotmail.com"], ["encrypted_password", "$2a$10$blWOgwXUAWgn.4M6QmNvpOlSlxeQyoe3.355D6dNp9qUpGx.sif2a"], ["name", "ricky"], ["created_at", "2015-04-17 01:00:00.688873"], ["updated_at", "2015-04-17 01:00:00.688873"], ["confirmation_token", "f8d3c653dcf23d72b4d2d225f3e31b9acc285a319227df6123c69cc1c5a5eb8e"], ["confirmation_sent_at", "2015-04-17 01:00:01.831794"]]
+  Rendered devise/mailer/confirmation_instructions.html.erb (1.1ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 297.1ms
+
+Sent mail to vrlamin@hotmail.com (246.0ms)
+Date: Fri, 17 Apr 2015 01:00:02 +0000
+From: vmanamino@gmail.com
+Reply-To: vmanamino@gmail.com
+To: vrlamin@hotmail.com
+Message-ID: <55305b1234b16_1903f92326f209486391@philter-207940.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome vrlamin@hotmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=SqwSbpV757yzEEdGXZ6z">Confirm my account</a></p>
+
+  [1m[35m (64.3ms)[0m  commit transaction
+Redirected to http://philter-207940.use1.nitrousbox.com/
+Completed 302 Found in 2014ms (ActiveRecord: 105.3ms)
+
+
+Started GET "/" for 108.18.246.157 at 2015-04-17 01:00:02 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 115ms (Views: 114.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=SqwSbpV757yzEEdGXZ6z" for 108.18.246.157 at 2015-04-17 01:01:42 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"SqwSbpV757yzEEdGXZ6z"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["confirmation_token", "f8d3c653dcf23d72b4d2d225f3e31b9acc285a319227df6123c69cc1c5a5eb8e"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "confirmation_token" = ?, "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["confirmation_token", nil], ["confirmed_at", "2015-04-17 01:01:42.239710"], ["updated_at", "2015-04-17 01:01:42.240332"], ["id", 9]]
+  [1m[35m (37.0ms)[0m  commit transaction
+Redirected to http://philter-207940.use1.nitrousbox.com/users/sign_in
+Completed 302 Found in 51ms (ActiveRecord: 37.7ms)
+
+
+Started GET "/users/sign_in" for 108.18.246.157 at 2015-04-17 01:01:42 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 144ms (Views: 142.3ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "vrlamin@hotmail.com"]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mSQL (39.5ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 9]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
