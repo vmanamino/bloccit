@@ -7221,3 +7221,191 @@ Processing by Devise::ConfirmationsController#show as HTML
   Rendered devise/shared/_links.html.erb (0.7ms)
   Rendered devise/confirmations/new.html.erb within layouts/application (4.4ms)
 Completed 200 OK in 138ms (Views: 117.7ms | ActiveRecord: 0.2ms)
+DEPRECATION WARNING: Devise.allow_insecure_sign_in_after_confirmation= is deprecated and has no effect. (called from allow_insecure_sign_in_after_confirmation= at (eval):6)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "vmanamino@gmail.com"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "vmanamino@gmail.com"]]
+  [1m[36mSQL (28.5ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 10]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "vmanamino@gmail.com"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "vrlamin@hotmail.com"]]
+DEPRECATION WARNING: Devise.allow_insecure_sign_in_after_confirmation= is deprecated and has no effect. (called from allow_insecure_sign_in_after_confirmation= at (eval):6)
+
+
+Started GET "/" for 108.18.246.157 at 2015-04-18 03:42:56 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 223ms (Views: 197.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.18.246.157 at 2015-04-18 03:42:58 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (414.6ms)
+Completed 200 OK in 569ms (Views: 547.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up" for 108.18.246.157 at 2015-04-18 03:43:03 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 111ms (Views: 109.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 108.18.246.157 at 2015-04-18 03:43:03 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 108.18.246.157 at 2015-04-18 03:43:03 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome-9f85176617a515152f96daf59d3cf2d0.css?body=1" for 108.18.246.157 at 2015-04-18 03:43:03 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 108.18.246.157 at 2015-04-18 03:43:03 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-b41b215eb0a0d7b845f4cc4a8ac52627.css?body=1" for 108.18.246.157 at 2015-04-18 03:43:03 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 108.18.246.157 at 2015-04-18 03:43:03 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 108.18.246.157 at 2015-04-18 03:43:03 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-6a37dea4509abab7d69e1de01fa44f76.js?body=1" for 108.18.246.157 at 2015-04-18 03:43:04 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-04-18 03:43:04 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-04-18 03:43:04 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-04-18 03:43:04 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-9cdf6e2fce722206f166c57ef7b531c2.js?body=1" for 108.18.246.157 at 2015-04-18 03:43:04 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/users" for 108.18.246.157 at 2015-04-18 03:43:34 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7RFpf4LkzaMhrZKqOzLiarboUfe12FSL2/omVZQNUz/2Wf538wL790nVe81b05xT6BDz9slF2nmM+KoHqDR2bw==", "user"=>{"name"=>"lacey", "email"=>"vmanamino@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'vmanamino@gmail.com' LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["confirmation_token", "f04dce42cf21ae9fabc7ea07fa92e737dd3425cef66dc7e1f30d13a4de87d156"]]
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["email", "vmanamino@gmail.com"], ["encrypted_password", "$2a$10$NZw8kGFfVtCvAnDrI.JUMOtVNhr.txtybXjbw2cYQzbyuk9CIoFTu"], ["name", "lacey"], ["created_at", "2015-04-18 03:43:34.924713"], ["updated_at", "2015-04-18 03:43:34.924713"], ["confirmation_token", "f04dce42cf21ae9fabc7ea07fa92e737dd3425cef66dc7e1f30d13a4de87d156"], ["confirmation_sent_at", "2015-04-18 03:43:35.956805"]]
+  Rendered devise/mailer/confirmation_instructions.html.erb (1.0ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 202.4ms
+
+Sent mail to vmanamino@gmail.com (235.9ms)
+Date: Sat, 18 Apr 2015 03:43:36 +0000
+From: vmanamino@gmail.com
+Reply-To: vmanamino@gmail.com
+To: vmanamino@gmail.com
+Message-ID: <5531d2e82eb74_6fa3f86ee6d1a00176e9@philter-207940.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome vmanamino@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://philter-207940.use1.nitrousbox.com//users/confirmation?confirmation_token=f04dce42cf21ae9fabc7ea07fa92e737dd3425cef66dc7e1f30d13a4de87d156">Confirm my account</a></p>
+
+  [1m[35m (27.9ms)[0m  commit transaction
+Redirected to http://philter-207940.use1.nitrousbox.com/
+Completed 302 Found in 1916ms (ActiveRecord: 29.5ms)
+
+
+Started GET "/" for 108.18.246.157 at 2015-04-18 03:43:36 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 121ms (Views: 119.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 108.18.246.157 at 2015-04-18 03:43:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 108.18.246.157 at 2015-04-18 03:43:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-04-18 03:43:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-04-18 03:43:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome-9f85176617a515152f96daf59d3cf2d0.css?body=1" for 108.18.246.157 at 2015-04-18 03:43:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-04-18 03:43:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-9cdf6e2fce722206f166c57ef7b531c2.js?body=1" for 108.18.246.157 at 2015-04-18 03:43:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/confirmation?confirmation_token=f04dce42cf21ae9fabc7ea07fa92e737dd3425cef66dc7e1f30d13a4de87d156" for 108.18.246.157 at 2015-04-18 03:44:49 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"f04dce42cf21ae9fabc7ea07fa92e737dd3425cef66dc7e1f30d13a4de87d156"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["confirmation_token", "326bf6a277eac626bd295f5334893998b2519fce81266b63627bb88f78f34a0d"]]
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 129ms (Views: 124.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 108.18.246.157 at 2015-04-18 03:44:49 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 108.18.246.157 at 2015-04-18 03:44:49 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome-9f85176617a515152f96daf59d3cf2d0.css?body=1" for 108.18.246.157 at 2015-04-18 03:44:49 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-04-18 03:44:49 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-04-18 03:44:49 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-04-18 03:44:49 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-9cdf6e2fce722206f166c57ef7b531c2.js?body=1" for 108.18.246.157 at 2015-04-18 03:44:49 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: Devise.allow_insecure_sign_in_after_confirmation= is deprecated and has no effect. (called from allow_insecure_sign_in_after_confirmation= at (eval):6)
