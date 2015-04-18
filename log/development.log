@@ -7152,3 +7152,72 @@ Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127
 
 Started GET "/assets/application-9cdf6e2fce722206f166c57ef7b531c2.js?body=1" for 108.18.246.157 at 2015-04-18 03:33:12 +0000
 Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: Devise.allow_insecure_sign_in_after_confirmation= is deprecated and has no effect. (called from allow_insecure_sign_in_after_confirmation= at (eval):6)
+
+
+Started GET "/" for 108.18.246.157 at 2015-04-18 03:35:04 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 223ms (Views: 196.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.18.246.157 at 2015-04-18 03:35:05 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (605.2ms)
+Completed 200 OK in 975ms (Views: 953.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 108.18.246.157 at 2015-04-18 03:35:46 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VnIU4VSYoA1yPrdlpqXEX4zkNdP4b1JkdsIecHDK5qVNOoPpJX6WWRpGXgLGRLpm0hyX0oTy3JYhwJIiTPPD9Q==", "user"=>{"name"=>"lacey", "email"=>"vmanamino@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'vmanamino@gmail.com' LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["confirmation_token", "fb8b45402db8ce17e2d0c9f491ec835da6909015883cca170199d5f2eda85e9b"]]
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["email", "vmanamino@gmail.com"], ["encrypted_password", "$2a$10$AbrKJ8QFDBzgthpaGpeER.xbg3FsPc4pk9p.oGwvuYdORnMuRqYhG"], ["name", "lacey"], ["created_at", "2015-04-18 03:35:46.942851"], ["updated_at", "2015-04-18 03:35:46.942851"], ["confirmation_token", "fb8b45402db8ce17e2d0c9f491ec835da6909015883cca170199d5f2eda85e9b"], ["confirmation_sent_at", "2015-04-18 03:35:47.975760"]]
+  Rendered devise/mailer/confirmation_instructions.html.erb (1.1ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 281.4ms
+
+Sent mail to vmanamino@gmail.com (196.6ms)
+Date: Sat, 18 Apr 2015 03:35:48 +0000
+From: vmanamino@gmail.com
+Reply-To: vmanamino@gmail.com
+To: vmanamino@gmail.com
+Message-ID: <5531d1144f1e9_6a33fb35a8e00742939@philter-207940.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome vmanamino@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://philter-207940.use1.nitrousbox.com//users/confirmation?confirmation_token=fb8b45402db8ce17e2d0c9f491ec835da6909015883cca170199d5f2eda85e9b">Confirm my account</a></p>
+
+  [1m[35m (49.5ms)[0m  commit transaction
+Redirected to http://philter-207940.use1.nitrousbox.com/
+Completed 302 Found in 1852ms (ActiveRecord: 50.9ms)
+
+
+Started GET "/" for 108.18.246.157 at 2015-04-18 03:35:48 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 110ms (Views: 109.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=fb8b45402db8ce17e2d0c9f491ec835da6909015883cca170199d5f2eda85e9b" for 108.18.246.157 at 2015-04-18 03:36:55 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"fb8b45402db8ce17e2d0c9f491ec835da6909015883cca170199d5f2eda85e9b"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["confirmation_token", "5d583c57f62cb819270027afbf02719c5e46bc9d0859dcb1bccfc23963c1c2e6"]]
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 138ms (Views: 117.7ms | ActiveRecord: 0.2ms)
