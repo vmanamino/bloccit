@@ -80,6 +80,6 @@ Rails.application.configure do
   config.secret_key_base = ENV["SECRET_KEY_BASE"]
   
   # http://bloccit.herokuapp.com
-  config.action_mailer.default_url_options = {host: 'bloccit.herokuapp.com'}
+  config.action_mailer.default_url_options = {host: 'viral-bloccit.herokuapp.com'}
   
 end
