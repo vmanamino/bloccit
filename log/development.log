@@ -8699,3 +8699,4 @@ Processing by Devise::SessionsController#new as HTML
   Rendered devise/shared/_links.html.erb (0.7ms)
   Rendered devise/sessions/new.html.erb within layouts/application (7.9ms)
 Completed 200 OK in 124ms (Views: 122.3ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138)
