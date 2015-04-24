@@ -320,7 +320,7 @@ DEPENDENCIES
   heroku
   jbuilder (~> 2.0)
   jquery-rails
-  mini_magick
+  mini_magick (~> 4.2.3)
   pg
   pry-rails
   pundit
