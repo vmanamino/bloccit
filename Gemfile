@@ -67,3 +67,11 @@ gem 'pundit'
 
 gem 'redcarpet'
 
+gem 'carrierwave'
+
+gem 'mini_magick', '~> 4.2.3'
+
+gem 'fog'
+
+
+
