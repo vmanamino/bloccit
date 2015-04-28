@@ -73,5 +73,7 @@ gem 'mini_magick', '~> 4.2.3'
 
 gem 'fog'
 
+gem 'will_paginate', '~> 3.0.5'
+
 
 
