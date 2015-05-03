@@ -21161,3 +21161,196 @@ Processing by PostsController#show as HTML
   Rendered comments/_comment.html.erb (0.9ms)
   Rendered posts/show.html.erb within layouts/application (8.6ms)
 Completed 200 OK in 154ms (Views: 150.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 108.18.246.157 at 2015-05-03 16:51:28 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+Completed 200 OK in 326ms (Views: 296.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 108.18.246.157 at 2015-05-03 16:51:29 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome-9f85176617a515152f96daf59d3cf2d0.css?body=1" for 108.18.246.157 at 2015-05-03 16:51:29 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 108.18.246.157 at 2015-05-03 16:51:29 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 108.18.246.157 at 2015-05-03 16:51:29 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-05-03 16:51:29 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-05-03 16:51:29 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-05-03 16:51:29 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-05-03 16:51:29 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-cbfc7f0d8f479a0dcac62098ab840f8b.js?body=1" for 108.18.246.157 at 2015-05-03 16:51:29 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/topics/15" for 108.18.246.157 at 2015-05-03 16:51:37 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTopic Load (0.3ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 15]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mTopic Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 15]]
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."topic_id" = ?  ORDER BY created_at DESC LIMIT 10 OFFSET 0  [["topic_id", 15]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 48]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 22]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 12]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+  Rendered topics/show.html.erb within layouts/application (448.2ms)
+Completed 200 OK in 679ms (Views: 601.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 108.18.246.157 at 2015-05-03 16:51:38 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 108.18.246.157 at 2015-05-03 16:51:38 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome-9f85176617a515152f96daf59d3cf2d0.css?body=1" for 108.18.246.157 at 2015-05-03 16:51:38 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 108.18.246.157 at 2015-05-03 16:51:38 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-05-03 16:51:38 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-05-03 16:51:38 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-05-03 16:51:38 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-05-03 16:51:38 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-cbfc7f0d8f479a0dcac62098ab840f8b.js?body=1" for 108.18.246.157 at 2015-05-03 16:51:38 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/topics/15/posts/48" for 108.18.246.157 at 2015-05-03 16:51:40 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"topic_id"=>"15", "id"=>"48"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ?  ORDER BY created_at DESC LIMIT 1[0m  [["id", 48]]
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 15]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 48]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 48]]
+  Rendered comments/_comment.html.erb (1.5ms)
+  Rendered posts/show.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 166ms (Views: 161.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/topics/15/posts/48/comments/new" for 108.18.246.157 at 2015-05-03 16:51:41 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommentsController#new as HTML
+  Parameters: {"topic_id"=>"15", "post_id"=>"48"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ?  ORDER BY created_at DESC LIMIT 1[0m  [["id", 48]]
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 15]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  Rendered comments/_form.html.erb (20.5ms)
+  Rendered comments/new.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 178ms (Views: 173.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/topics/15/posts/48/comments" for 108.18.246.157 at 2015-05-03 16:52:01 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ubq5UUdXjLoBmdnjYkBrBnzJKciB0XEgZNKuBmWF56ZgZaHIpP8vtdshXH7p83AS/v2TCeserhTPjtcTTg2Vnw==", "comment"=>{"body"=>"and it's fleece was gold as butter"}, "commit"=>"Save", "topic_id"=>"15", "post_id"=>"48"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ?  ORDER BY created_at DESC LIMIT 1  [["id", 48]]
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 15]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "comments" ("body", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["body", "and it's fleece was gold as butter"], ["user_id", 8], ["post_id", 48], ["created_at", "2015-05-03 16:52:01.018242"], ["updated_at", "2015-05-03 16:52:01.018242"]]
+  [1m[36m (413.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://philter-207940.use1.nitrousbox.com/topics/15/posts/48
+Completed 302 Found in 427ms (ActiveRecord: 414.3ms)
+
+
+Started GET "/topics/15/posts/48" for 108.18.246.157 at 2015-05-03 16:52:01 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"topic_id"=>"15", "id"=>"48"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ?  ORDER BY created_at DESC LIMIT 1  [["id", 48]]
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 15]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 48]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 48]]
+  Rendered comments/_comment.html.erb (1.2ms)
+  Rendered posts/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 151ms (Views: 147.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 108.18.246.157 at 2015-05-03 16:52:01 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 108.18.246.157 at 2015-05-03 16:52:01 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 108.18.246.157 at 2015-05-03 16:52:01 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome-9f85176617a515152f96daf59d3cf2d0.css?body=1" for 108.18.246.157 at 2015-05-03 16:52:01 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-05-03 16:52:01 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-05-03 16:52:01 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-05-03 16:52:01 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 108.18.246.157 at 2015-05-03 16:52:01 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-cbfc7f0d8f479a0dcac62098ab840f8b.js?body=1" for 108.18.246.157 at 2015-05-03 16:52:01 +0000
+Cannot render console from 108.18.246.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255

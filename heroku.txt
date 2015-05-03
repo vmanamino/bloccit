@@ -1,0 +1,101 @@
+2015-05-03T16:38:52.373296+00:00 app[web.1]: Completed 200 OK in 42ms (Views: 24.7ms | ActiveRecord: 11.6ms)
+2015-05-03T16:38:52.331563+00:00 app[web.1]: Processing by PostsController#show as HTML
+2015-05-03T16:38:52.331571+00:00 app[web.1]:   Parameters: {"topic_id"=>"16", "id"=>"53"}
+2015-05-03T16:38:52.338346+00:00 app[web.1]:   [1m[35mPost Load (3.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1  ORDER BY created_at DESC LIMIT 1  [["id", 53]]
+2015-05-03T16:38:52.361741+00:00 app[web.1]:   Rendered comments/_comment.html.erb (6.1ms)
+2015-05-03T16:38:52.347096+00:00 app[web.1]:   [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 25]]
+2015-05-03T16:38:52.354031+00:00 app[web.1]:   [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 53]]
+2015-05-03T16:38:52.326435+00:00 app[web.1]: Started GET "/topics/16/posts/53" for 108.18.246.157 at 2015-05-03 16:38:52 +0000
+2015-05-03T16:38:52.349884+00:00 app[web.1]:   [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 27]]
+2015-05-03T16:38:52.340791+00:00 app[web.1]:   [1m[36mTopic Load (1.3ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT 1[0m  [["id", 16]]
+2015-05-03T16:38:52.371081+00:00 app[web.1]:   Rendered posts/show.html.erb within layouts/application (27.5ms)
+2015-05-03T16:38:52.360995+00:00 app[web.1]:   [1m[36mComment Load (1.7ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 53]]
+2015-05-03T16:38:54.764139+00:00 heroku[router]: at=info method=GET path="/topics/16/posts/53/comments/new" host=viral-bloccit.herokuapp.com request_id=84b0721a-5c1a-4ded-b765-26af3daf6761 fwd="108.18.246.157" dyno=web.1 connect=2ms service=31ms status=200 bytes=2976
+2015-05-03T16:38:54.754841+00:00 app[web.1]:   Rendered comments/_form.html.erb (2.7ms)
+2015-05-03T16:38:54.759786+00:00 app[web.1]: Completed 200 OK in 20ms (Views: 11.1ms | ActiveRecord: 3.7ms)
+2015-05-03T16:38:54.736020+00:00 app[web.1]: Started GET "/topics/16/posts/53/comments/new" for 108.18.246.157 at 2015-05-03 16:38:54 +0000
+2015-05-03T16:38:54.745492+00:00 app[web.1]:   [1m[36mTopic Load (1.2ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT 1[0m  [["id", 16]]
+2015-05-03T16:38:54.739661+00:00 app[web.1]: Processing by CommentsController#new as HTML
+2015-05-03T16:38:54.739685+00:00 app[web.1]:   Parameters: {"topic_id"=>"16", "post_id"=>"53"}
+2015-05-03T16:38:54.743078+00:00 app[web.1]:   [1m[35mPost Load (1.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1  ORDER BY created_at DESC LIMIT 1  [["id", 53]]
+2015-05-03T16:38:54.747621+00:00 app[web.1]:   [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 25]]
+2015-05-03T16:38:54.755074+00:00 app[web.1]:   Rendered comments/new.html.erb within layouts/application (4.2ms)
+2015-05-03T16:43:35.263210+00:00 app[web.1]:   [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 25]]
+2015-05-03T16:43:35.267079+00:00 app[web.1]: ActiveRecord::UnknownAttributeError (unknown attribute 'user_id' for Comment.):
+2015-05-03T16:43:35.259213+00:00 app[web.1]:   [1m[36mPost Load (1.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1  ORDER BY created_at DESC LIMIT 1[0m  [["id", 53]]
+2015-05-03T16:43:35.255598+00:00 app[web.1]: Processing by CommentsController#create as HTML
+2015-05-03T16:43:35.267062+00:00 app[web.1]: 
+2015-05-03T16:43:35.252973+00:00 app[web.1]: Started POST "/topics/16/posts/53/comments" for 108.18.246.157 at 2015-05-03 16:43:35 +0000
+2015-05-03T16:43:35.261250+00:00 app[web.1]:   [1m[35mTopic Load (1.2ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT 1  [["id", 16]]
+2015-05-03T16:43:35.266022+00:00 app[web.1]: Completed 500 Internal Server Error in 10ms (ActiveRecord: 3.5ms)
+2015-05-03T16:43:35.267081+00:00 app[web.1]:   app/controllers/comments_controller.rb:12:in `create'
+2015-05-03T16:43:35.267083+00:00 app[web.1]: 
+2015-05-03T16:43:35.255637+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"0pAPksLVpA8JDvrMU15DrSNwV3ihq+p163la2M7cfUEijysDTfHnDdZiJ1bkqinwcYt9oxNofP61+evhCl4W4A==", "comment"=>{"body"=>"Do aussies keep koalas as pets?"}, "commit"=>"Save", "topic_id"=>"16", "post_id"=>"53"}
+2015-05-03T16:43:35.267084+00:00 app[web.1]: 
+2015-05-03T16:49:08.873694+00:00 heroku[router]: at=info method=GET path="/" host=viral-bloccit.herokuapp.com request_id=fe5e0274-8b8f-42ab-89e0-558d96daf073 fwd="108.18.246.157" dyno=web.1 connect=1ms service=14ms status=200 bytes=2866
+2015-05-03T16:49:08.912898+00:00 heroku[router]: at=info method=GET path="/assets/application-1387d50db4fc9507b5c55c7747d53f0a.js" host=viral-bloccit.herokuapp.com request_id=d585623a-fbab-428c-975f-7d7c2e470c7c fwd="108.18.246.157" dyno=web.1 connect=1ms service=9ms status=304 bytes=263
+2015-05-03T16:49:08.969861+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=viral-bloccit.herokuapp.com request_id=af396969-de3d-4bc6-a224-555633bb5f79 fwd="108.18.246.157" dyno=web.1 connect=2ms service=4ms status=304 bytes=178
+2015-05-03T16:49:08.863600+00:00 app[web.1]: Started GET "/" for 108.18.246.157 at 2015-05-03 16:49:08 +0000
+2015-05-03T16:49:08.867300+00:00 app[web.1]:   Rendered welcome/index.html.erb within layouts/application (0.3ms)
+2015-05-03T16:49:08.871788+00:00 app[web.1]: Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 1.2ms)
+2015-05-03T16:49:08.865797+00:00 app[web.1]: Processing by WelcomeController#index as HTML
+2015-05-03T16:49:08.869996+00:00 app[web.1]:   [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 25]]
+2015-05-03T16:49:14.852075+00:00 app[web.1]:   [1m[35mTopic Load (1.6ms)[0m  SELECT  "topics".* FROM "topics" LIMIT 10 OFFSET 0
+2015-05-03T16:49:14.843848+00:00 app[web.1]: Processing by TopicsController#index as HTML
+2015-05-03T16:49:14.855332+00:00 app[web.1]: Completed 200 OK in 11ms (Views: 4.3ms | ActiveRecord: 2.8ms)
+2015-05-03T16:49:14.841636+00:00 app[web.1]: Started GET "/topics" for 108.18.246.157 at 2015-05-03 16:49:14 +0000
+2015-05-03T16:49:14.847314+00:00 app[web.1]:   [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 25]]
+2015-05-03T16:49:14.853562+00:00 app[web.1]:   Rendered topics/index.html.erb within layouts/application (3.3ms)
+2015-05-03T16:49:14.858563+00:00 heroku[router]: at=info method=GET path="/topics" host=viral-bloccit.herokuapp.com request_id=e24ac219-2bc1-4349-b385-c12c124b72e4 fwd="108.18.246.157" dyno=web.1 connect=1ms service=19ms status=200 bytes=2711
+2015-05-03T16:49:16.365526+00:00 heroku[router]: at=info method=GET path="/topics/16" host=viral-bloccit.herokuapp.com request_id=a997876d-62a7-47fa-8fb9-02774f545714 fwd="108.18.246.157" dyno=web.1 connect=1ms service=41ms status=200 bytes=4283
+2015-05-03T16:49:16.347990+00:00 app[web.1]:   [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 27]]
+2015-05-03T16:49:16.353690+00:00 app[web.1]:   [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 25]]
+2015-05-03T16:49:16.357374+00:00 app[web.1]:   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 25]]
+2015-05-03T16:49:16.360700+00:00 app[web.1]:   Rendered topics/show.html.erb within layouts/application (18.2ms)
+2015-05-03T16:49:16.328223+00:00 app[web.1]: Started GET "/topics/16" for 108.18.246.157 at 2015-05-03 16:49:16 +0000
+2015-05-03T16:49:16.332112+00:00 app[web.1]:   Parameters: {"id"=>"16"}
+2015-05-03T16:49:16.344832+00:00 app[web.1]:   [1m[35mPost Load (1.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."topic_id" = $1  ORDER BY created_at DESC LIMIT 10 OFFSET 0  [["topic_id", 16]]
+2015-05-03T16:49:16.332017+00:00 app[web.1]: Processing by TopicsController#show as HTML
+2015-05-03T16:49:16.339017+00:00 app[web.1]:   [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 25]]
+2015-05-03T16:49:16.351373+00:00 app[web.1]:   [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 53]]
+2015-05-03T16:49:16.335313+00:00 app[web.1]:   [1m[36mTopic Load (1.2ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT 1[0m  [["id", 16]]
+2015-05-03T16:49:16.341800+00:00 app[web.1]:   [1m[36mTopic Exists (1.2ms)[0m  [1mSELECT  1 AS one FROM "topics" WHERE "topics"."id" = $1 LIMIT 1[0m  [["id", 16]]
+2015-05-03T16:49:16.359835+00:00 app[web.1]:   [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 51]]
+2015-05-03T16:49:16.356342+00:00 app[web.1]:   [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 52]]
+2015-05-03T16:49:16.362312+00:00 app[web.1]: Completed 200 OK in 30ms (Views: 13.2ms | ActiveRecord: 10.5ms)
+2015-05-03T16:49:18.385288+00:00 heroku[router]: at=info method=GET path="/topics/16/posts/53" host=viral-bloccit.herokuapp.com request_id=63edfbe1-30bf-4012-8784-3a91487184d5 fwd="108.18.246.157" dyno=web.1 connect=1ms service=27ms status=200 bytes=2925
+2015-05-03T16:49:18.378974+00:00 app[web.1]:   [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 53]]
+2015-05-03T16:49:18.364897+00:00 app[web.1]: Processing by PostsController#show as HTML
+2015-05-03T16:49:18.364907+00:00 app[web.1]:   Parameters: {"topic_id"=>"16", "id"=>"53"}
+2015-05-03T16:49:18.368447+00:00 app[web.1]:   [1m[36mPost Load (1.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1  ORDER BY created_at DESC LIMIT 1[0m  [["id", 53]]
+2015-05-03T16:49:18.372918+00:00 app[web.1]:   [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 25]]
+2015-05-03T16:49:18.383559+00:00 app[web.1]: Completed 200 OK in 19ms (Views: 8.0ms | ActiveRecord: 7.3ms)
+2015-05-03T16:49:18.362150+00:00 app[web.1]: Started GET "/topics/16/posts/53" for 108.18.246.157 at 2015-05-03 16:49:18 +0000
+2015-05-03T16:49:18.370478+00:00 app[web.1]:   [1m[35mTopic Load (1.2ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT 1  [["id", 16]]
+2015-05-03T16:49:18.375273+00:00 app[web.1]:   [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 27]]
+2015-05-03T16:49:18.381520+00:00 app[web.1]:   Rendered comments/_comment.html.erb (1.7ms)
+2015-05-03T16:49:18.381345+00:00 app[web.1]:   [1m[35mComment Load (1.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 53]]
+2015-05-03T16:49:18.382060+00:00 app[web.1]:   Rendered posts/show.html.erb within layouts/application (10.9ms)
+2015-05-03T16:49:19.591683+00:00 app[web.1]: Started GET "/topics/16/posts/53/comments/new" for 108.18.246.157 at 2015-05-03 16:49:19 +0000
+2015-05-03T16:49:19.599064+00:00 app[web.1]:   [1m[35mTopic Load (1.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT 1  [["id", 16]]
+2015-05-03T16:49:19.604103+00:00 app[web.1]:   Rendered comments/_form.html.erb (1.6ms)
+2015-05-03T16:49:19.604193+00:00 app[web.1]:   Rendered comments/new.html.erb within layouts/application (1.9ms)
+2015-05-03T16:49:19.605771+00:00 app[web.1]: Completed 200 OK in 12ms (Views: 3.8ms | ActiveRecord: 3.5ms)
+2015-05-03T16:49:19.609630+00:00 heroku[router]: at=info method=GET path="/topics/16/posts/53/comments/new" host=viral-bloccit.herokuapp.com request_id=126dd100-ac6d-4a06-a3d3-1699c417a886 fwd="108.18.246.157" dyno=web.1 connect=2ms service=21ms status=200 bytes=2976
+2015-05-03T16:49:19.601083+00:00 app[web.1]:   [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 25]]
+2015-05-03T16:49:19.594075+00:00 app[web.1]:   Parameters: {"topic_id"=>"16", "post_id"=>"53"}
+2015-05-03T16:49:19.594053+00:00 app[web.1]: Processing by CommentsController#new as HTML
+2015-05-03T16:49:19.597202+00:00 app[web.1]:   [1m[36mPost Load (1.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1  ORDER BY created_at DESC LIMIT 1[0m  [["id", 53]]
+2015-05-03T16:49:32.626304+00:00 app[web.1]: Completed 500 Internal Server Error in 8ms (ActiveRecord: 3.4ms)
+2015-05-03T16:49:32.615854+00:00 app[web.1]: Started POST "/topics/16/posts/53/comments" for 108.18.246.157 at 2015-05-03 16:49:32 +0000
+2015-05-03T16:49:32.622685+00:00 app[web.1]:   [1m[36mTopic Load (1.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT 1[0m  [["id", 16]]
+2015-05-03T16:49:32.618056+00:00 app[web.1]: Processing by CommentsController#create as HTML
+2015-05-03T16:49:32.629699+00:00 heroku[router]: at=info method=POST path="/topics/16/posts/53/comments" host=viral-bloccit.herokuapp.com request_id=0a9546f2-94e8-45dc-a01d-64e05894ed4f fwd="108.18.246.157" dyno=web.1 connect=1ms service=17ms status=500 bytes=1799
+2015-05-03T16:49:32.620882+00:00 app[web.1]:   [1m[35mPost Load (1.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1  ORDER BY created_at DESC LIMIT 1  [["id", 53]]
+2015-05-03T16:49:32.627349+00:00 app[web.1]: 
+2015-05-03T16:49:32.624559+00:00 app[web.1]:   [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 25]]
+2015-05-03T16:49:32.618090+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y33JQpk8lMsaH0ZpqvD1TzbksL7XWe4biWZ8On1HDx6TYu3TFhjXycVzm/MdBJ8SZB+aZWWaeJDX5s0DucVkvw==", "comment"=>{"body"=>"do aussies keep koalas as pets?"}, "commit"=>"Save", "topic_id"=>"16", "post_id"=>"53"}
+2015-05-03T16:49:32.627353+00:00 app[web.1]:   app/controllers/comments_controller.rb:12:in `create'
+2015-05-03T16:49:32.627355+00:00 app[web.1]: 
+2015-05-03T16:49:32.627351+00:00 app[web.1]: ActiveRecord::UnknownAttributeError (unknown attribute 'user_id' for Comment.):
+2015-05-03T16:49:32.627356+00:00 app[web.1]: 
