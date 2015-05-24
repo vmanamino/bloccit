@@ -46065,3 +46065,10 @@ Content-Transfer-Encoding: 7bit
 
 ----==_mimepart_555f8899e2ce0_3fe3f98a03573342437f--
 
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35mFavorite Load (0.4ms)[0m  SELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ?  [["user_id", 10]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "vmanamino@gmail.com"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "vmanamino@gmail.com"]]
+  [1m[36mFavorite Load (0.2ms)[0m  [1mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ?[0m  [["user_id", 9]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "member@example.com"]]
+  [1m[36mFavorite Load (0.3ms)[0m  [1mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ?[0m  [["user_id", 8]]
