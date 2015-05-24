@@ -46178,3 +46178,100 @@ Processing by TopicsController#index as HTML
   [1m[35mTopic Load (0.2ms)[0m  SELECT  "topics".* FROM "topics" LIMIT 10 OFFSET 10
   Rendered topics/index.html.erb within layouts/application (2.2ms)
 Completed 200 OK in 153ms (Views: 150.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 71.163.107.55 at 2015-05-24 03:24:21 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 9]]
+Completed 200 OK in 311ms (Views: 281.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/favorites-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 71.163.107.55 at 2015-05-24 03:24:21 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-236c3e7b43630de60d4c4660430b88ba.js?body=1" for 71.163.107.55 at 2015-05-24 03:24:21 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/topics" for 71.163.107.55 at 2015-05-24 03:24:28 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35mTopic Load (0.4ms)[0m  SELECT  "topics".* FROM "topics" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "topics"[0m
+  Rendered topics/index.html.erb within layouts/application (345.6ms)
+Completed 200 OK in 561ms (Views: 552.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/favorites-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 71.163.107.55 at 2015-05-24 03:24:29 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-236c3e7b43630de60d4c4660430b88ba.js?body=1" for 71.163.107.55 at 2015-05-24 03:24:29 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/topics?page=2" for 71.163.107.55 at 2015-05-24 03:24:30 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 9]]
+  [1m[36mTopic Load (0.3ms)[0m  [1mSELECT  "topics".* FROM "topics" LIMIT 10 OFFSET 10[0m
+  Rendered topics/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 180ms (Views: 177.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 71.163.107.55 at 2015-05-24 03:24:33 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GnROKSrik/n2m4o4EXnhwcTbwaAFTj6dymAP4duBpOxBHnsRolGVmnJbiHMW5NNTzyTaHM8s1Rp2TkjexjtiJg=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 9]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://philter-207940.use1.nitrousbox.com/
+Completed 302 Found in 10ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 71.163.107.55 at 2015-05-24 03:24:33 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 161ms (Views: 160.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/favorites-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 71.163.107.55 at 2015-05-24 03:24:33 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-236c3e7b43630de60d4c4660430b88ba.js?body=1" for 71.163.107.55 at 2015-05-24 03:24:33 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/topics" for 71.163.107.55 at 2015-05-24 03:24:37 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.4ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."public" = 't' LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "topics" WHERE "topics"."public" = 't'
+  Rendered topics/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 164ms (Views: 159.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/favorites-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 71.163.107.55 at 2015-05-24 03:24:37 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-236c3e7b43630de60d4c4660430b88ba.js?body=1" for 71.163.107.55 at 2015-05-24 03:24:37 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/topics?page=2" for 71.163.107.55 at 2015-05-24 03:24:40 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mTopic Load (0.3ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."public" = 't' LIMIT 10 OFFSET 10[0m
+  Rendered topics/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 158ms (Views: 156.6ms | ActiveRecord: 0.3ms)
