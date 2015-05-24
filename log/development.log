@@ -46065,3 +46065,116 @@ Content-Transfer-Encoding: 7bit
 
 ----==_mimepart_555f8899e2ce0_3fe3f98a03573342437f--
 
+  [1m[36mTopic Load (0.4ms)[0m  [1mSELECT  "topics".* FROM "topics"  ORDER BY "topics"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "topics" SET "public" = ?, "updated_at" = ? WHERE "topics"."id" = ?[0m  [["public", "f"], ["updated_at", "2015-05-24 00:27:07.771279"], ["id", 2]]
+  [1m[35m (46.7ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "topics" WHERE "topics"."public" = 't'[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "topics"[0m
+
+
+Started GET "/" for 71.163.107.55 at 2015-05-24 02:20:25 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 282ms (Views: 255.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/favorites-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 71.163.107.55 at 2015-05-24 02:20:25 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-236c3e7b43630de60d4c4660430b88ba.js?body=1" for 71.163.107.55 at 2015-05-24 02:20:25 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/topics" for 71.163.107.55 at 2015-05-24 02:20:31 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.3ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."public" = 't' LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "topics" WHERE "topics"."public" = 't'[0m
+  Rendered topics/index.html.erb within layouts/application (382.4ms)
+Completed 200 OK in 871ms (Views: 853.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/favorites-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 71.163.107.55 at 2015-05-24 02:20:33 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-236c3e7b43630de60d4c4660430b88ba.js?body=1" for 71.163.107.55 at 2015-05-24 02:20:33 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/topics?page=2" for 71.163.107.55 at 2015-05-24 02:20:42 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mTopic Load (0.4ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."public" = 't' LIMIT 10 OFFSET 10
+  Rendered topics/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 162ms (Views: 160.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 71.163.107.55 at 2015-05-24 02:20:53 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (47.6ms)
+Completed 200 OK in 212ms (Views: 192.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/sign_in" for 71.163.107.55 at 2015-05-24 02:21:09 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H5y8SABFJmqfzUPsezAuqV36cf03tuf88vyuhevqmVGE3DU2lX4Y/xyzBa5s04slEqrwPsI5jENCTSNWdfeyaA==", "user"=>{"email"=>"vmanamino@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "vmanamino@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-05-24 02:21:09.548176"], ["current_sign_in_at", "2015-05-24 02:21:09.548176"], ["last_sign_in_ip", "71.163.107.55"], ["current_sign_in_ip", "71.163.107.55"], ["sign_in_count", 1], ["updated_at", "2015-05-24 02:21:09.549800"], ["id", 9]]
+  [1m[35m (30.1ms)[0m  commit transaction
+Redirected to http://philter-207940.use1.nitrousbox.com/
+Completed 302 Found in 159ms (ActiveRecord: 31.2ms)
+
+
+Started GET "/" for 71.163.107.55 at 2015-05-24 02:21:09 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 9]]
+Completed 200 OK in 143ms (Views: 141.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/favorites-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 71.163.107.55 at 2015-05-24 02:21:09 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-236c3e7b43630de60d4c4660430b88ba.js?body=1" for 71.163.107.55 at 2015-05-24 02:21:09 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/topics" for 71.163.107.55 at 2015-05-24 02:21:14 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 9]]
+  [1m[36mTopic Load (0.3ms)[0m  [1mSELECT  "topics".* FROM "topics" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "topics"
+  Rendered topics/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 164ms (Views: 161.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/favorites-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 71.163.107.55 at 2015-05-24 02:21:15 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-236c3e7b43630de60d4c4660430b88ba.js?body=1" for 71.163.107.55 at 2015-05-24 02:21:15 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/topics?page=2" for 71.163.107.55 at 2015-05-24 02:21:18 +0000
+Cannot render console from 71.163.107.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35mTopic Load (0.2ms)[0m  SELECT  "topics".* FROM "topics" LIMIT 10 OFFSET 10
+  Rendered topics/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 153ms (Views: 150.0ms | ActiveRecord: 0.4ms)
