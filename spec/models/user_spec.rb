@@ -21,10 +21,5 @@ require 'rails_helper'
        expect(@user.favorited(@post)).to eq(favorite)
      end
      
-     it "returns `nil` if the user has favorited another post" do
-       favorite_other = @user.favorites.where(post: @post_other).create
-       expect(@user.favorited(@post)).to be_nil
-       
-     end
    end
  end
