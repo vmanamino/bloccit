@@ -6,8 +6,7 @@ describe "Visiting profiles" do
   
   include Warden::Test::Helpers
   Warden.test_mode!
-  Warden.test_reset!
-  
+    
   before do 
     @user = authenticated_user
     @post = associated_post(user: @user)
@@ -46,6 +45,6 @@ describe "Visiting profiles" do
       expect(page).to have_content(@post.title)
       expect(page).to have_content(@comment.body)      
     end
-    Warden
+    
   end
 end
