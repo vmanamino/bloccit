@@ -16,18 +16,14 @@ module ApplicationHelper
   end
   
   def up_vote_link_classes(post)
-    class_string = "glyphicon glyphicon-chevron-up"
-    if current_user.voted(post) && current_user.voted(post).up_vote?
-      class_string = "glyphicon glyphicon-chevron-up voted"
-    end
-    class_string  
+    return "glyphicon glyphicon-chevron-up voted" if current_user.voted(post) && current_user.voted(post).up_vote?
+
+  "glyphicon glyphicon-chevron-up"
   end
   
   def down_vote_link_classes(post)
-    class_string = "glyphicon glyphicon-chevron-down"
-    if current_user.voted(post) && current_user.voted(post).down_vote?
-      class_string = "glyphicon glyphicon-chevron-down voted"
-    end
-    class_string
+    return "glyphicon glyphicon-chevron-down voted" if current_user.voted(post) && current_user.voted(post).down_vote?
+
+    "glyphicon glyphicon-chevron-down"
   end
 end
