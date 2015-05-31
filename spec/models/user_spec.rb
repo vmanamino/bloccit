@@ -79,7 +79,7 @@ require 'rails_helper'
        expect(@user_with_post_and_comment.comments.count).to be(1)
      end
      
-     it "returns post other than associated post" do
+     it "returns post other than associated_post" do
        expect(@user_post.id).not_to be(@post.id)
      end
      
