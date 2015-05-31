@@ -49,4 +49,43 @@ require 'rails_helper'
        expect( users.first.comments_count ).to eq(2)
      end
    end
+   
+   describe "method to create post and comment" do
+     
+     before do
+       @user_with_post_and_comment = create(:user_with_post_and_comment)
+       @user_post = @user_with_post_and_comment.posts.first
+       @user_comment = @user_with_post_and_comment.comments.first
+       @user = authenticated_user
+       @post = associated_post
+       @comment = Comment.new(body: 'My comment is really great', post: @post, user: @user)
+       
+       
+     end
+     
+     it "returns 0 posts for the authenticated_user" do
+       expect(@user.posts.count).to be(0)
+     end
+     
+     it "returns 1 post when called" do
+       expect(@user_with_post_and_comment.posts.count).to eq(1)
+     end
+     
+     it "returns 0 comments for the authenticated_user" do
+       expect(@user.comments.count).to be(0)
+     end
+     
+     it "returns 1 comment when called" do
+       expect(@user_with_post_and_comment.comments.count).to be(1)
+     end
+     
+     it "returns post other than associated post" do
+       expect(@user_post.id).not_to be(@post.id)
+     end
+     
+     it "returns comment other than authenticated user comment" do
+       expect(@user_comment.id).not_to be(@comment.id)
+     end
+               
+   end
  end
