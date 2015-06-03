@@ -6,6 +6,6 @@ $('.js-comments-count').html("<%= pluralize(@comment.user.comments.count, 'comme
 
 <% else %>
 
-  $('#comment-' +<%= @comment.id %>).prepend("<div class='alert alert-danger'><%= flash[:error] %></div>);
+  $('#comment-' +<%= @comment.id %>).prepend("<div class='alert alert-danger'><%= flash[:error] %></div>");
 
 <% end %>
